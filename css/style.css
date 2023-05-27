@@ -1,0 +1,180 @@
+body {
+    background-color: #1a584e;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+header {
+    background-color: #4D774E;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-bottom: 2px solid #acee14;
+    
+}
+
+p {
+  color: floralwhite;
+  word-wrap: break-word;
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+  h1 {
+    font-size: 60px;
+    color: #54c756;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px #704444;
+  }
+
+
+section {
+    float: bottom;
+    width: 70%;
+    margin-bottom: 100px;
+
+}
+
+aside {
+    float: right;
+    width: 25%;
+    margin-top: 50px;
+    background-color: rgba(129, 209, 129, 0.75);
+    padding: 20px;
+    border: 1px solid #CCCCCC;
+  }
+
+  aside h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  aside ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+  
+  aside li {
+    margin-bottom: 5px;
+  }
+
+  aside li:hover {
+  background-color: #CCCCCC;
+}
+
+
+  footer {
+    background-color: #a0a880;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    clear: both;
+    
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+
+    transition: background-color 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      
+
+  }
+
+  footer a {
+    color: #FFFFFF;
+  }
+
+ 
+  footer:hover {
+    background-color: #555555;
+    
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    background-color: #F1B24A;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  nav li a:hover {
+    text-decoration: underline;
+  }
+  
+  .cactus-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align items horizontally in center */
+  }
+  
+  .cactus-list li {
+    margin: 10px; /* Add some margin between images */
+    position: relative; /* Set position to relative for absolute positioning */
+    z-index: 0;
+  }
+  
+  .cactus-list a {
+    display: block;
+  }
+  
+  .cactus-list img {
+    display: block;
+    width: 200px;
+    height: auto;
+    border: 1px solid #CCCCCC;
+    transition: transform 0.2s ease-in-out; /* Add transition effect for smooth scaling */
+  }
+  
+  .cactus-list img:hover {
+    transform: scale(2); /* Scale up the image on hover */
+    z-index: 1; /* Bring the hovered image to the top */
+  }
+  
+  .cactus-list img:active {
+    transform: scale(0.9); /* Scale down the image on click */
+  }
+  
+  .cactus-list .caption {
+    position: absolute; /* Set position to absolute to position caption */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background for caption */
+    color: #FFFFFF;
+    text-align: center;
+    opacity: 0; /* Initially hide the caption */
+    transition: opacity 0.2s ease-in-out; /* Add transition effect for smooth fade in/out */
+  }
+  
+  .cactus-list li:hover .caption {
+    opacity: 1; 
+
+  }
+
